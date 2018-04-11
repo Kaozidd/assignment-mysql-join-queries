@@ -1,6 +1,6 @@
 # MySql Join Queries
 
-## 1 Write a query to get the department name and number of employees in the department.
+### 1 Write a query to get the department name and number of employees in the department.
 
 ```sql
 SELECT 
@@ -13,7 +13,7 @@ ON E.DEPARTMENT_ID = D.DEPARTMENT_ID
 GROUP BY E.DEPARTMENT_ID;
 ```
 
-# 2 Write a query to find the employee ID, job title, number of days between ending date and starting date for all jobs in department 90 from job history.
+### 2 Write a query to find the employee ID, job title, number of days between ending date and starting date for all jobs in department 90 from job history.
 
 ```sql
 SELECT
@@ -30,7 +30,7 @@ WHERE
   H.DEPARTMENT_ID = 90
 ```
 
-# 3 Write a query to display the department ID and name and first name of manager.
+### 3 Write a query to display the department ID and name and first name of manager.
 
 ```sql
 SELECT
@@ -43,7 +43,7 @@ INNER JOIN Departments D
   ON E.EMPLOYEE_ID = D.MANAGER_ID
 ```
 
-# 4 Write a query to display the department name, manager name, and city.
+### 4 Write a query to display the department name, manager name, and city.
 
 ```sql
 SELECT
@@ -58,7 +58,7 @@ INNER JOIN Locations L
   ON D.LOCATION_ID = L.LOCATION_ID
 ```
 
-# 5 Write a query to display the job title and average salary of employees.
+### 5 Write a query to display the job title and average salary of employees.
 
 ```sql
 SELECT
@@ -71,7 +71,7 @@ INNER JOIN Employees E
 GROUP BY J.JOB_ID
 ```
 
-# 6 Write a query to display job title, employee name, and the difference between salary of the employee and minimum salary for the job.
+### 6 Write a query to display job title, employee name, and the difference between salary of the employee and minimum salary for the job.
 
 ```sql
 SELECT
@@ -84,7 +84,7 @@ INNER JOIN Employees E
   ON J.JOB_ID = E.JOB_ID
 ```
 
-# 7 Write a query to display the job history that were done by any employee who is currently drawing more than 10000 of salary.
+### 7 Write a query to display the job history that were done by any employee who is currently drawing more than 10000 of salary.
 
 ```sql
 SELECT
@@ -104,7 +104,7 @@ WHERE
   E.SALARY > 10000
 ```
 
-# 8 Write a query to display department name, name (first_name, last_name), hire date, salary of the manager for all managers whose experience is more than 15 years.
+### 8 Write a query to display department name, name (first_name, last_name), hire date, salary of the manager for all managers whose experience is more than 15 years.
 
 ```sql
 SELECT
